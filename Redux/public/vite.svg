@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="192" height="192" viewBox="0 0 192 192" xml:space="preserve">
+    <desc>
+        Created with Fabric.js 5.4.0
+    </desc>
+    <defs/>
+    <rect x="0" y="0" width="100%" height="100%" fill="transparent"/>
+    <g transform="matrix(1 0 0 1 96.5 96.1)">
+        <g style="">
+            <g transform="matrix(1 0 0 1 0 0)">
+                <rect x="-80.51647373107748" y="-87.00999999999999" rx="0" ry="0" width="161.03294746215497" height="174.01999999999998" stroke="rgb(255,255,255)" stroke-opacity="0" stroke-width="1" stroke-dasharray="none" stroke-linecap="butt" stroke-dashoffset="0" stroke-linejoin="miter" stroke-miterlimit="4" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" opacity="1"/>
+            </g>
+            <g transform="matrix(1 0 0 1 4.58 -12.49)">
+                <path paint-order="stroke" transform=" translate(-101.09, -83.61)" d="M 129.03 142.13 L 99.93 93.31 L 88.07 93.31 Q 85.45 93.31 83.99 91.23 Q 82.53 89.16 82.53 85.61 L 82.53 85.61 Q 82.53 77.76 88.99 77.76 L 88.99 77.76 L 107.01 77.76 Q 112.71 77.76 115.02 74.53 Q 117.33 71.29 117.33 67.44 L 117.33 67.44 L 117.33 47.58 Q 117.33 43.73 115.02 40.49 Q 112.71 37.26 107.01 37.26 L 107.01 37.26 L 74.52 37.26 L 74.52 137.67 Q 74.52 145.06 65.43 145.06 L 65.43 145.06 Q 56.35 145.06 56.35 137.67 L 56.35 137.67 L 56.35 30.94 Q 56.35 25.4 59.19 23.55 Q 62.04 21.7 66.05 21.7 L 66.05 21.7 L 110.86 21.7 Q 114.87 21.7 119.18 23.4 Q 123.49 25.09 127.49 27.71 L 127.49 27.71 L 127.34 27.71 Q 131.34 30.64 133.5 35.33 Q 135.66 40.03 135.66 46.19 L 135.66 46.19 L 135.66 68.67 Q 135.66 81.15 127.34 87.31 L 127.34 87.31 Q 125.65 88.54 123.72 89.62 Q 121.8 90.7 119.79 91.77 L 119.79 91.77 L 144.43 132.43 Q 144.9 133.2 145.36 134.43 Q 145.82 135.66 145.82 136.43 L 145.82 136.43 Q 145.82 140.13 140.58 143.52 L 140.58 143.52 L 140.58 143.36 Q 137.04 145.52 134.58 145.52 L 134.58 145.52 Q 131.04 145.52 128.88 141.98 L 128.88 141.98 L 129.03 142.13 Z" stroke-linecap="butt" stroke="rgb(255,255,255)" stroke-width="0" stroke-dasharray="none" stroke-dashoffset="0" stroke-linejoin="miter" stroke-miterlimit="4" fill="rgb(0,0,0)" fill-rule="nonzero" opacity="1"/>
+            </g>
+        </g>
+    </g>
+</svg>
