@@ -1,10 +1,28 @@
 import "./index.css";
+import { useState } from "react";
+import Box1 from "./components/box1";
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  const user = {
+    name: "Sindhu",
+    age: 27,
+  };
+
   return (
-    <div>
-      <p className="text-red-900 text-4xl">Hello</p>
-    </div>
+    <>
+      <div className="class">
+        <button onClick={() => setCount((count) => count + 1)}>
+          Increment
+        </button>
+        <h1>{count}</h1>
+        <button onClick={() => setCount((count) => count - 1)}>
+          Decrement
+        </button>
+      </div>
+      <Box1 count={count} user={user} />
+    </>
   );
 }
 
