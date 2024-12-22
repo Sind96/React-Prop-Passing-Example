@@ -1,6 +1,7 @@
 import Box1 from "./box1";
+import { boxProps } from "./propsType";
 
-export default function Box2() {
+export default function Box2(props: boxProps) {
   return (
     <div className="Box">
       <h2>

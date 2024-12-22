@@ -1,14 +1,6 @@
-import React from "react";
+import { boxProps } from "./propsType";
 
-type box1Props = {
-  count: number;
-  user: {
-    name: string;
-    age: number;
-  };
-};
-
-export default function Box1(props: box1Props) {
+export default function Box1(props: boxProps) {
   const { name } = props.user;
   const { count } = props;
 
