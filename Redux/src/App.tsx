@@ -1,6 +1,7 @@
-import "./index.css";
 import { useState } from "react";
+
 import Box1 from "./components/box1";
+import "./index.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <>
-      <div className="class">
+      <div className="p-8">
         <button onClick={() => setCount((count) => count + 1)}>
           Increment
         </button>

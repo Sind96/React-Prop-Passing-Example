@@ -1,16 +1,13 @@
-import Box2 from "./box2";
+import Box4 from "./box4";
 import { boxProps } from "./propsType";
 
 export default function Box3(props: boxProps) {
-  const { age } = props.user;
-
   return (
-    <div className="box">
+    <div className="border-4 border-white rounded-md p-2 mt-2">
       <h2>
-        Box 3 - <span>3rd child component</span>
+        Box 3 - <span>3rd Child Component</span>
       </h2>
-      <h3>You are {age} years old</h3>
-      <Box2 user={props.user} count={props.count} />
+      <Box4 user={props.user} count={props.count} />
     </div>
   );
 }
