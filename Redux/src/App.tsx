@@ -34,16 +34,22 @@ function App() {
             className="border p-2 rounded"
           ></input>
         </div>
-
+        {/* Counter */}
         <div className="p-4 mt-4 border-t">
-          <h2 className="text-xl font-semibold mb-2">Counter</h2>
-          <button onClick={() => setCount((count) => count + 1)}>
+          <h2 className="text-2xl font-bold mb-2">Counter</h2>
+          <button
+            className="bg-green-500 text-white py-2 px-4 rounded mr-2 text-base"
+            onClick={() => setCount((count) => count + 1)}
+          >
             Increment
           </button>
-          <h1>{count}</h1>
-          <button onClick={() => setCount((count) => count - 1)}>
+          <button
+            className="bg-red-500 text-white py-2 px-4 rounded mr-2 text-base"
+            onClick={() => setCount((count) => count - 1)}
+          >
             Decrement
           </button>
+          <h1 className="mt-2 mr-3 text-2xl font-bold">{count}</h1>
         </div>
       </div>
       <Box1 count={count} user={user} />
