@@ -5,22 +5,44 @@ import "./index.css";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [name, setName] = useState("Enter Name");
+  const [age, setAge] = useState("Enter Age");
 
   const user = {
-    name: "Sindhu",
-    age: 27,
+    name,
+    age,
   };
 
   return (
     <>
       <div className="p-8">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Increment
-        </button>
-        <h1>{count}</h1>
-        <button onClick={() => setCount((count) => count - 1)}>
-          Decrement
-        </button>
+        <div className="mb-4">
+          <label htmlFor="name">Enter your name: </label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="border p-2 rounded"
+          ></input>{" "}
+          <label htmlFor="age">Enter your age: </label>
+          <input
+            type="text"
+            id="age"
+            value={age}
+            onChange={(e) => setAge(e.target.value)}
+            className="border p-2 rounded"
+          ></input>
+        </div>
+        <div className="p-4">
+          <button onClick={() => setCount((count) => count + 1)}>
+            Increment
+          </button>
+          <h1>{count}</h1>
+          <button onClick={() => setCount((count) => count - 1)}>
+            Decrement
+          </button>
+        </div>
       </div>
       <Box1 count={count} user={user} />
     </>
