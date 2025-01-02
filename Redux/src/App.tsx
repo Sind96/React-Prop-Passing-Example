@@ -24,7 +24,7 @@ function App() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="border p-2 rounded"
-          ></input>{" "}
+          ></input>
           <label htmlFor="age">Enter your age: </label>
           <input
             type="text"
@@ -34,7 +34,9 @@ function App() {
             className="border p-2 rounded"
           ></input>
         </div>
-        <div className="p-4">
+
+        <div className="p-4 mt-4 border-t">
+          <h2 className="text-xl font-semibold mb-2">Counter</h2>
           <button onClick={() => setCount((count) => count + 1)}>
             Increment
           </button>
