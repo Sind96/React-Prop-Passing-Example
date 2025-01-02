@@ -2,15 +2,15 @@ import { boxProps } from "./propsType";
 
 export default function Box4(props: boxProps) {
   const { name } = props.user;
-  const count = props.count;
+  const { count } = props;
 
   return (
-    <div className="border-4 border-white rounded-md p-2 mt-2">
-      <h2>
+    <div className="border-4 border-purple-500 rounded-md p-4 mt-4">
+      <h2 className="font-bold text-lg">
         Box 4 - <span>4th Child Component</span>
       </h2>
-      <h3>Goodbye {name}</h3>
-      <h4>The Final Count Is {count}!</h4>
+      <h3 className="mt-2">Goodbye, {name || "Guest"}!</h3>
+      <h4 className="mt-2">The Final Count Is {count}!</h4>
     </div>
   );
 }

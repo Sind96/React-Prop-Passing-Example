@@ -5,54 +5,64 @@ import "./index.css";
 
 function App() {
   const [count, setCount] = useState(0);
-  const [name, setName] = useState("Enter Name");
-  const [age, setAge] = useState("Enter Age");
+  const [name, setName] = useState("");
+  const [age, setAge] = useState("");
 
   const user = {
     name,
-    age,
+    age: age ? parseInt(age, 10) : 0,
   };
 
   return (
     <>
-      <div className="p-8">
-        <div className="mb-4">
-          <label htmlFor="name">Enter your name: </label>
+      <div className="px-4">
+        <h1 className="text-3xl font-bold mb-4">React Prop Passing Example</h1>
+
+        <h2 className="text-2xl font-bold mb-3">User Info</h2>
+        <div className="mb-6">
+          <label
+            className="block mb-2 text-base font-semibold"
+            htmlFor="name"
+          ></label>
           <input
             type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="border p-2 rounded"
+            placeholder="Enter your name"
+            className="border p-2 rounded w-full mb-4"
           ></input>
-          <label htmlFor="age">Enter your age: </label>
+          <label
+            className="block mb-2 text-base font-semibold"
+            htmlFor="age"
+          ></label>
           <input
-            type="text"
+            type="number"
             id="age"
             value={age}
             onChange={(e) => setAge(e.target.value)}
-            className="border p-2 rounded"
+            placeholder="Enter your age"
+            className="border p-2 rounded w-full"
           ></input>
         </div>
-        {/* Counter */}
-        <div className="p-4 mt-4 border-t">
-          <h2 className="text-2xl font-bold mb-2">Counter</h2>
+        <div className="border-t pt-2 mb-5 border-b">
+          <h2 className="text-xl font-bold my-4">Counter</h2>
           <button
-            className="bg-green-500 text-white py-2 px-4 rounded mr-2 text-base"
+            className="bg-green-500 text-white py-2 px-4 rounded mr-2"
             onClick={() => setCount((count) => count + 1)}
           >
             Increment
           </button>
           <button
-            className="bg-red-500 text-white py-2 px-4 rounded mr-2 text-base"
+            className="bg-red-500 text-white py-2 px-4 rounded mr-2"
             onClick={() => setCount((count) => count - 1)}
           >
             Decrement
           </button>
-          <h1 className="mt-2 mr-3 text-2xl font-bold">{count}</h1>
+          <h1 className="my-4 text-lg">Count: {count}</h1>
         </div>
+        <Box1 count={count} user={user} />
       </div>
-      <Box1 count={count} user={user} />
     </>
   );
 }
