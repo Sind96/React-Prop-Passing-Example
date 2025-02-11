@@ -1,9 +1,8 @@
 import { useState } from "react";
-
 import Box1 from "./components/box1";
 import "./index.css";
 
-function App() {
+const App = () => {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
@@ -65,6 +64,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;
