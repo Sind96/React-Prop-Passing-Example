@@ -1,6 +1,6 @@
 import { boxProps } from "./propsType";
 
-export default function Box4(props: boxProps) {
+const Box4 = (props: boxProps) => {
   const { name } = props.user;
   const { count } = props;
 
@@ -13,4 +13,6 @@ export default function Box4(props: boxProps) {
       <h4 className="mt-2">The Final Count Is {count}!</h4>
     </div>
   );
-}
+};
+
+export default Box4;

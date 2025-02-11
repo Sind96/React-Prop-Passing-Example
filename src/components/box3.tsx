@@ -1,7 +1,7 @@
 import Box4 from "./box4";
 import { boxProps } from "./propsType";
 
-export default function Box3(props: boxProps) {
+const Box3 = (props: boxProps) => {
   return (
     <div className="border-4 border-yellow-500 rounded-md p-4 mt-4">
       <h2 className="font-bold text-lg">
@@ -10,4 +10,6 @@ export default function Box3(props: boxProps) {
       <Box4 {...props} />
     </div>
   );
-}
+};
+
+export default Box3;

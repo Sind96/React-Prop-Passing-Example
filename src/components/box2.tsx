@@ -1,7 +1,7 @@
 import Box3 from "./box3";
 import { boxProps } from "./propsType";
 
-export default function Box2(props: boxProps) {
+const Box2 = (props: boxProps) => {
   const { age } = props.user;
 
   return (
@@ -15,4 +15,6 @@ export default function Box2(props: boxProps) {
       <Box3 {...props} />
     </div>
   );
-}
+};
+
+export default Box2;
