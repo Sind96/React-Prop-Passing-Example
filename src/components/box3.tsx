@@ -1,5 +1,5 @@
-import Box4 from "./Box4.js";
-import { boxProps } from "./propsType.js";
+import Box4 from "./Box4.tsx";
+import { boxProps } from "../types/type.ts";
 
 const Box3 = (props: boxProps) => {
   return (

@@ -1,4 +1,4 @@
-import { boxProps } from "./propsType.js";
+import { boxProps } from "../types/type.ts";
 
 const Box4 = (props: boxProps) => {
   const { name } = props.user;
