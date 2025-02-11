@@ -1,5 +1,5 @@
-import Box2 from "./box2.js";
-import { boxProps } from "./propsType";
+import Box2 from "./Box2.js";
+import { boxProps } from "./propsType.js";
 
 const Box1 = (props: boxProps) => {
   const { name } = props.user;
