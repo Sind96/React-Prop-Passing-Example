@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Box1 from "./components/Box1";
+import Box1 from "./components/Box1.js";
 import "./index.css";
 
 const App = () => {
